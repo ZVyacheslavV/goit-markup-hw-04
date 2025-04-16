@@ -373,7 +373,7 @@ ol {
 
 /* 4 */
 .social-icon {
-    fill: var(--white); 
+    fill: var(--cloud); 
 }
 
 .team-facelist .section-subtitle {
@@ -489,11 +489,6 @@ ol {
     justify-content: center;
     align-items: center;
     gap: 16px;
-}
-
-/* 4 */
-.footer-social-icon {
-    fill: var(--cloud);
 }
 
 /* 4 */
