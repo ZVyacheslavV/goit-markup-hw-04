@@ -71,6 +71,9 @@ ol {
 /* 3 */
 .page-header {
     border-bottom: 1px solid var(--cornflower);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);;
 }
 
 /* 3 */
@@ -114,7 +117,7 @@ ol {
 }
 
 /* 4 */
-.pagenav-list .link:nth-child(1):after {
+.pagenav-list .current-page-link:after {
     border-radius: 2px;
     width: 48px;
     height: 4px;
@@ -135,6 +138,13 @@ ol {
     /* 3 */
     padding: 24px 0;
     display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 4 */
+.pagenav-list .current-page-link {
+    color: var(--ocean);
+    position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -246,16 +256,20 @@ ol {
     height: 112px;
     background: var(--cloud);
     margin-bottom: 8px;    
-    position: relative;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+
 }
 
 /* 4 */
-.approach-icon {
+/* .approach-icon {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);    
-}
+} */
 
 /* 3 */
 .visually-hidden {
@@ -313,7 +327,7 @@ ol {
 
 /* 3 */
 .employee-text {
-    padding: 32px 0 /* 4 */ 8px 0;
+    padding: 32px 0;
 }
 
 .team-facelist-item {
@@ -329,7 +343,7 @@ ol {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 8px 16px 32px 16px;
+    margin-top: 8px;
     gap: 24px;
 }
 
@@ -475,6 +489,11 @@ ol {
     justify-content: center;
     align-items: center;
     gap: 16px;
+}
+
+/* 4 */
+.footer-social-icon {
+    fill: var(--cloud);
 }
 
 /* 4 */
