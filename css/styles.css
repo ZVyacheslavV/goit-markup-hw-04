@@ -357,6 +357,7 @@ ol {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    fill: var(--white);
 }
 
 .team-facelist .section-subtitle {
@@ -380,6 +381,13 @@ ol {
 .portfolio-list .portfolio-litem {
     flex-basis: calc((100% - 48px) / 3);
 }
+.portfolio-list .portfolio-litem:hover,
+.portfolio-list .portfolio-litem:focus
+ {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+        0 1px 1px 0 rgba(46, 47, 66, 0.16),
+        0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
 
 /* 3 */
 .portapp-text {
@@ -393,9 +401,7 @@ ol {
 .page-footer {
     background-color: var(--navy-blue);
     /* 3 */
-    padding: 100px 0;
-    /* 4 */
-    display: flex;
+    padding: 100px 0;  
 }
 
 .footer-logo .logo-link-studpart {
@@ -419,7 +425,6 @@ ol {
 
 /* 4 */
 .social-media-text {
-    font-family: var(--font-family);
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
@@ -446,17 +451,17 @@ ol {
 }
 
 /* 4 */
-.footer-social-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 24px;
-    height: 24px;
-}
-
-/* 4 */
 .footer-social-icons-litem:hover,
 .footer-social-icons-litem:focus {
     background: var(--green);
+}
+
+/* 4 */
+.footer-container {
+    display: flex;
+}
+
+/* 4 */
+.footer-logo-text-container {
+    margin-right: 120px;
 }
